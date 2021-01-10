@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -717,6 +717,7 @@ GameObject:
   - component: {fileID: 907486549}
   - component: {fileID: 907486548}
   - component: {fileID: 907486547}
+  - component: {fileID: 907486555}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -731,7 +732,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 907486546}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5810fd79de411044387581bb21936872, type: 3}
   m_Name: 
@@ -763,6 +764,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f93b897ff104a204e994c7480cac12c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!114 &907486550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -844,7 +846,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 907486546}
-  m_LocalRotation: {x: -0, y: 0.48282483, z: -0, w: 0.875717}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -852,7 +854,26 @@ Transform:
   - {fileID: 628725271}
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 57.74, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &907486555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907486546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2206cdfd9c7f724ebaf95ae1d206b1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inDegree: {x: 0, y: 0, z: 0}
+  xR: 0
+  yR: 0
+  zR: 0
+  xD: 0
+  yD: 0
+  zD: 0
 --- !u!1 &1047276675
 GameObject:
   m_ObjectHideFlags: 0

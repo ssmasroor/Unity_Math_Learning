@@ -6,6 +6,9 @@ public class FromToRotation : MonoBehaviour
 {
     // Start is called before the first frame update
 
+    [SerializeField]
+    private Transform target;
+
     void Start()
     {
         // Sets the rotation so that the transform's y-axis goes along the z-axis
